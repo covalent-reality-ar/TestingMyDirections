@@ -3,7 +3,7 @@
 
 <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
 <script src="https://johnaloomis.github.io/CovalentAR/aframe/build/aframe-ar.js"></script>
-<script src="js/click.js"></script>
+
 
 
 <body style='margin : 0px; overflow: hidden;'>
@@ -12,7 +12,7 @@
   			<a-asset-item id="Logo" src="models/Test/Hiro.gltf"></a-asset-item>
   		</a-assets>
 
-      <a-marker  marker emitevents="true" cursor="rayOrigin: mouse" preset='pattern' type='pattern' url="markers/Test/pattern-Marker.patt">
+      <a-marker preset='pattern' type='pattern' url="markers/Test/pattern-Marker.patt">
         <a-entity gltf-model="#Logo" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear"></a-entity>
 
       </a-marker>
