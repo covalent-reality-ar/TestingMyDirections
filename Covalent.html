@@ -5,6 +5,8 @@
 <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
 <script src="https://johnaloomis.github.io/CovalentAR/aframe/build/aframe-ar.js"></script>
 <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+<script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
+
 
 
 
@@ -23,7 +25,7 @@ https://stackoverflow.com/questions/56192021/how-to-declare-a-mask-material-usin
     <a-scene stats embedded arjs='trackingMethod: best; debugUIEnabled: false'>
 
         <a-marker preset='pattern' type='pattern' url="markers/Covalent/pattern-marker.patt">
-			       <a-entity geometry="primitive:plane" rotation="270 0 0 " material="shader:gif;src:url(card.gif);" scale="5 5 5" position="2.22 0 1.78"></a-entity>
+			       <a-entity geometry="primitive:plane" rotation="270 0 0 " material="shader:gif;src:url(card.gif);" scale="5 5 5" position="2.22 0 1.78" gif=""></a-entity>
 
         </a-marker>
         <a-entity camera></a-entity>
