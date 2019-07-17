@@ -24,8 +24,12 @@ https://stackoverflow.com/questions/56192021/how-to-declare-a-mask-material-usin
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene stats embedded arjs='trackingMethod: best; debugUIEnabled: false'>
 
+      <a-assets>
+  			<a-asset-item id="Logo" src="models/CovalentLogo/card.glb"></a-asset-item>
+  		</a-assets>
+
         <a-marker preset='pattern' type='pattern' url="markers/Covalent/pattern-marker.patt">
-			       <a-entity geometry="primitive:plane" rotation="270 0 0 " material="shader:gif;src:url(card.gif);" scale="5 5 5" position="2.22 0 1.78" gif=""></a-entity>
+			       <a-entity gltf-model="#Logo"></a-entity>
 
         </a-marker>
         <a-entity camera></a-entity>
